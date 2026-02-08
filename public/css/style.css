@@ -102,7 +102,7 @@ body {
 }
 
 footer {
-    position: fixed;
+    position: static;
     bottom: 0;
 }
 
