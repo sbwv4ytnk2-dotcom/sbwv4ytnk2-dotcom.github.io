@@ -1,19 +1,19 @@
 const answers_no = {
     english: [
         "No",
-        "Are you sure?",
-        "Are you really sure??",
-        "Are you really realy sure???",
-        "Think again?",
-        "Don't believe in second chances?",
-        "Why are you being so cold?",
-        "Maybe we can talk about it?",
-        "I am not going to ask again!",
-        "Ok now this is hurting my feelings!",
-        "You are now just being mean!",
-        "Why are you doing this to me?",
-        "Please give me a chance!",
-        "I am begging you to stop!",
+        "Tu es sûre ?",
+        "Sûre et certaine ??",
+        // "Are you really realy sure???",
+        "Rélféchis encore un peu ?",
+        // "Don't believe in second chances?",
+        // "Why are you being so cold?",
+        // "Maybe we can talk about it?",
+        // "I am not going to ask again!",
+        // "Ok now this is hurting my feelings!",
+        // "You are now just being mean!",
+        // "Why are you doing this to me?",
+        // "Please give me a chance!",
+        // "I am begging you to stop!",
         "D'accord, merci pour ta sincérité"
     ],
     french: [
@@ -96,6 +96,8 @@ no_button.addEventListener('click', () => {
 });
 
 yes_button.addEventListener('click', () => {
+    const disiz = document.getElementById('disiz');
+    const question = document.getElementById('question-heading');
     // change banner gif path
     let banner = document.getElementById('banner');
     banner.src = "public/images/paddy-laugh.gif";
@@ -106,9 +108,7 @@ yes_button.addEventListener('click', () => {
     // show message div
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
-    const disiz = document.getElementById('disiz');
-    const question = document.getElementById('question-heading');
-
+    
     disiz.style.display = "none";
     question.style.display = "none";
 });
