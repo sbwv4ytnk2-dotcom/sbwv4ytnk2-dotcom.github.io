@@ -153,6 +153,6 @@ function changeLanguage() {
     } else if (language === "thai") {
         successMessage.textContent = "ฮูเร่ คืนดีกันแล้วน้า :3";
     } else {
-        successMessage.textContent = "Yepppie, see you sooonnn :3";
+        successMessage.textContent = "Yepppie, à bientôt :3";
     }
 }
