@@ -106,6 +106,11 @@ yes_button.addEventListener('click', () => {
     // show message div
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
+    const disiz = document.getElementById('disiz');
+    const question = document.getElementById('question-heading');
+
+    disiz.style.display = "none";
+    question.style.display = "none";
 });
 
 function refreshBanner() {
